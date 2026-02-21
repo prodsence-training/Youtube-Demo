@@ -1,0 +1,4 @@
+這是一個簡單的示範檔案。
+
+你可以在 GitHub 上看到這個檔案，
+並通過 Antigravity 或 VSCode 將整個專案 clone 到你的本地電腦。
