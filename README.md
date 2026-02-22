@@ -17,30 +17,74 @@ Github-Demo/
 
 ### 方法 1：使用 Antigravity
 
-Antigravity 是 GitHub 的 Web 編輯器，讓你可以在瀏覽器中編輯程式碼。
+Antigravity 是 Google 發行的 AI IDE，配備智能 Agent 功能，可以幫助你更高效地進行程式開發。
+
+**前置要求：**
+- 已從 Antigravity 官網下載並安裝（https://antigravity.google/）
 
 **步驟：**
 
-1. 按下鍵盤快捷鍵 `.` (句號鍵) 或將 URL 中的 `github.com` 改為 `github.dev`
-   - 例如：`https://github.dev/[username]/[repo-name]`
+1. 打開 Antigravity 應用程式
 
-2. 你會看到 VSCode Web 介面
+![Antigravity 歡迎畫面](assets/01-歡迎畫面-Welcome-to-Antigravity.png)
 
-3. 點擊左側的「Source Control」圖標（三個圓點連線的圖標）
+2. 首次啟動時會進入初始化設定流程
 
-4. 點擊「Clone Repository」
+**2.1 選擇偏好的設定流程**
 
-5. 在搜尋框輸入此專案的 GitHub URL
+![選擇設定流程](assets/02-選擇設定流程-Choose-Setup-Flow.png)
 
-6. 選擇本專案並開始編輯
+第一個畫面會問你要不要從 VS Code 或 Cursor 匯入設定。
+如果你之前沒用過這些工具，直接選「Fresh Start」就好。
 
-**截圖說明：**
+**2.2 選擇編輯器主題**
 
-```
-[預期截圖位置 1] - Antigravity 首頁面
-[預期截圖位置 2] - Source Control 面板
-[預期截圖位置 3] - Clone 對話框
-```
+![選擇編輯器主題](assets/03-選擇編輯器主題-Choose-Editor-Theme.png)
+
+接下來選主題。如果你喜歡深色背景就選 Dark，不喜歡的話可以選 Light。
+別擔心，等一下我會教你怎麼換成更多主題選擇。先隨便選一個，我們繼續。
+
+**2.3 配置 Agent 使用模式**
+
+![選擇Agent使用模式](assets/04-選擇Agent使用模式-Agent-Usage-Mode.png)
+
+這一步很重要。它在問你希望 AI 有多自動。
+我建議初學者選「Review-driven development」，也就是目前顯示 Recommended 的這個。
+這個模式下，AI 每做一步都會先問你，你同意了它才會執行。這樣你可以慢慢了解 AI 在幹嘛，比較有安全感。
+
+右邊的 Terminal 跟 Review policy 都保持 Request Review 不用改。
+JavaScript execution 保持 Disabled 就好。
+
+**2.4 設定編輯器選項**
+
+![配置編輯器設定](assets/05-配置編輯器設定-Configure-Editor-Settings.png)
+
+這邊是編輯器設定。三個都保持預設就好：
+Normal 鍵位、Recommended 擴充套件、Command Line 勾著也沒關係。
+直接按 Next。
+
+3. 完成設定後，你會看到 Antigravity 編輯器主畫面
+
+4. 在 Antigravity 內 Clone 此專案：在左側導航欄中，找到「Clone Repository」選項
+
+![在Antigravity中Clone Repository](assets/11-在Antigravity中Clone-Repository.png)
+
+5. 在搜尋框輸入此專案的 GitHub URL：
+   ```
+   https://github.com/[username]/Github-Demo.git
+   ```
+
+6. 選擇本專案進行 Clone
+
+7. 系統會提示你信任資料夾作者，點擊「信任」確認
+
+![信任資料夾作者確認](assets/12-信任資料夾作者確認-Trust-Authors.png)
+
+8. Clone 完成後，你可以開始編輯程式碼並使用 Agent 功能
+
+![編輯器主畫面與Agent面板](assets/13-編輯器主畫面與Agent面板.png)
+
+**提示：** 你也可以先用其他方式（如 Git 命令列或 VSCode）Clone 此專案，然後在 Antigravity 中打開資料夾即可。
 
 ---
 
@@ -97,16 +141,6 @@ cd Github-Demo
 - 查看 `docs/getting-started.md` 了解快速開始指南
 - 探索 `examples/` 資料夾查看示範檔案
 - 修改文件並嘗試提交變更（Commit）到你的 Fork
-
----
-
-## 💡 小貼士
-
-| 工具 | 適用情境 | 優點 |
-|------|--------|------|
-| **Antigravity** | 快速瀏覽、線上編輯 | 無需安裝，即開即用 |
-| **VSCode** | 正式開發、本地編輯 | 功能完整，適合日常開發 |
-| **命令列** | 進階使用者 | 最靈活，支援複雜操作 |
 
 ---
 
